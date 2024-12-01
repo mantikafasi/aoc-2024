@@ -1,0 +1,1 @@
+DAY=01 PART=1 && (cd day$DAY && clang++ part$PART.cpp -o out && ./out)
