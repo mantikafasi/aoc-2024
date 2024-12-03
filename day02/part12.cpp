@@ -5,8 +5,10 @@
 #include <iostream>
 #include <map>
 #include <vector>
+#include <chrono>
 
 using namespace std;
+using namespace std::chrono;
 
 vector<string> readContents(string filename)
 {
@@ -46,7 +48,11 @@ bool isSafe(vector<int> numbers)
 
 int main()
 {
+    auto start = high_resolution_clock::now();
+
     vector<string> results = readContents("input.txt");
+
+
     int part1 = 0;
     int part2 = 0;
 
@@ -89,4 +95,9 @@ int main()
 
     cout << "Part 1: " << part1 << "\n";
     cout << "Part 2: " << part2;
+
+    auto end = high_resolution_clock::now();
+    auto duration = duration_cast<microseconds>(end - start).count();
+    cout << "Time taken: " << duration << " microseconds" << endl;
+    
 }
