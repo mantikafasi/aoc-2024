@@ -1,1 +1,1 @@
-DAY=04 PART=12 && (cd day$DAY && clang++ part$PART.cpp -o out && ./out)
+DAY=05 PART=12 && (cd day$DAY && clang++ part$PART.cpp -o out && ./out)
