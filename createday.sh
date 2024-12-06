@@ -1,1 +1,1 @@
-DAY=05 && mkdir day$DAY && cp ./template.cpp day05/part12.cpp
+mkdir day$1 && cp ./template.cpp day$1/part12.cpp

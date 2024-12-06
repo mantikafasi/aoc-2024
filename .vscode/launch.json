@@ -4,7 +4,7 @@
             "name": "C/C++: g++-10 build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${fileDirname}/out",
             "args": ["std=c++23"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
