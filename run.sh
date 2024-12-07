@@ -1,1 +1,1 @@
-DAY=$1 PART=$2 && (cd day$DAY && clang++ -Ofast part$PART.cpp -o out && ./out)
+DAY=$1 PART=$2 && (cd day$DAY && clang++ --std=c++20 -O3 part$PART.cpp -o out && ./out)
