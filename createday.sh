@@ -1,1 +1,1 @@
-mkdir day$1 && cp ./template.cpp day$1/part12.cpp
+mkdir day$1 && cp ./template.cpp day$1/part12.cpp && touch day$1/input.txt

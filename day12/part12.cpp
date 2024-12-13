@@ -38,6 +38,12 @@ vector<T> splitString(string& input, char delimiter) {
     return vec;
 }
 
+bool canMove(vector<string>& positions, int i, int j) {
+    if (i < 0 || j < 0 || i >= positions.size() || j >= positions[0].size()) {
+        return false;
+    }
+    return true;
+}
 
 vector<pair<int, int>> floodFill(vector<string>& grid, char character, int i, int j) {
     vector<pair<int, int>> elements;
