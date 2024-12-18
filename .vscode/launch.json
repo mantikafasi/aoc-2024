@@ -1,6 +1,13 @@
 {
     "configurations": [
         {
+            "name": "CUDA C++: Launch",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "cwd": "${fileDirname}",
+            "program": "${fileDirname}/out"
+        },
+        {
             "name": "C/C++: g++-10 build and debug active file",
             "type": "cppdbg",
             "request": "launch",
