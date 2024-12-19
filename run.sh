@@ -19,5 +19,6 @@ else
         -O3 \
         -I$LLVM_PATH/include \
         -L$LLVM_PATH/lib \
+        -fopenmp \
         part$PART.cpp -o out
 fi && ./out)
